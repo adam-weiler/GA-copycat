@@ -1,7 +1,11 @@
 * {
     margin: 0;
-    /* padding: 0; */
-    
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -28,6 +32,7 @@ header h1 {
 }
 
 header nav {
+    margin: 0;
     padding: 15px 25px;
     top: 0;
     right: 0;
@@ -73,7 +78,7 @@ aside { /* The banner image and h1. */
 
 .aside-column1 {
     flex: 25%;
-    max-width: 50%;
+    max-width: 60%;
 }
 
 .aside-column1 img {
@@ -82,7 +87,13 @@ aside { /* The banner image and h1. */
 
 .aside-column2 {
     flex: 25%;
-    max-width: 25%;
+    max-width: 40%;
+}
+
+.aside-column2 h3 {
+    padding: 32px 20px;
+    font-size: 1.4em;
+    text-align: center;
 }
 
 
@@ -94,6 +105,10 @@ h1 {
     /* text-decoration: underline; */
     /* text-decoration-color: #EF476F; */
     display: inline-block;
+}
+
+h2 {
+    font-size: .9em;
 }
 
 img {
@@ -110,6 +125,12 @@ main {
 
 .cats-section { /* The section about cats. */
     background-color: #FFD166;
+    padding: 50px 25px;
+}
+
+.cats-section p {
+    padding: 20px 0 0;
+    font-size: .7em;
 }
 
 .products-section { /* The section about products. */
