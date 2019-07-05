@@ -1,43 +1,74 @@
-.container {
-    /* margin: 0 auto; */
-    /* height: auto; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    background-color: lightblue;
+body {
+    height: 1000px;
 }
 
-header {
-    grid-column: 1 / 4;
+header { /* The Cat shop menu. */
     /* grid-row: 1 / 1; */
     background-color: #06D6A0;
 }
 
-aside {
-    grid-column: 1 / 4;
-    grid-row: 2 / 2;
+.container { /* Contains everything. */
+    margin: 0 auto;
+    /* height: auto; */
+    max-width: 900px;
+    width: 90%;
+    /* max-height: auto; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: auto auto auto auto auto; */
+    background-color: lightblue;
 }
 
-aside section {
-    width: 50%;
-    display: inline-block;
+aside { /* The banner image and h1. */
+    grid-column: 1 / 4;
+    /* grid-row: 2 / 2; */
+    color: #FFF;
+    background-color: #26547C;
+    height: 250px;
+    max-height: 80%;
 }
+
+
+
+
 
 h1 {
-    width: 50%;
-    text-decoration: underline;
-    text-decoration-color: #EF476F;
+    width: auto;
+    /* text-decoration: underline; */
+    /* text-decoration-color: #EF476F; */
     display: inline-block;
 }
 
 img {
-    max-width: 100%;
+    /* max-height: 100%; */
+    /* height: 100%; */
+    /* max-width: 100%; */
+    /* height: auto; */
+    max-height: 200px;
 }
 
-.cats-section {
+main {
+    grid-column: 1 / 4;
+}
+
+.cats-section { /* The section about cats. */
     background-color: #FFD166;
 }
 
-.products-section {
+.products-section { /* The section about products. */
+    grid-column: 1 / 4;
     background-color: #F2F2F2;
+}
+
+.products-section img {
+    max-width: 100%;
+    height: auto;
+    /* display: inline; */
+    border: 1px black solid;
+    float: right;
+}
+
+.principles-section { /* The section about principles. */
+    grid-column: 1 / 4;
+    background-color: #26547C;
 }
