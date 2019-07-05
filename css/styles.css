@@ -128,7 +128,7 @@ main {
     padding: 50px 25px;
 }
 
-.cats-section p {
+p {
     padding: 20px 0 0;
     font-size: .7em;
 }
@@ -136,14 +136,25 @@ main {
 .products-section { /* The section about products. */
     grid-column: 1 / 4;
     background-color: #F2F2F2;
+    padding: 50px 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products-section p {
+    background-color: red;
+    width: 100%;
+    flex: 100%;
+    max-width: 100%;
 }
 
 .products-section img {
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
     /* display: inline; */
     border: 1px black solid;
-    float: right;
+    /* float: right; */
+    width: 100%;
 }
 
 .principles-section { /* The section about principles. */
