@@ -24,8 +24,26 @@ aside { /* The banner image and h1. */
     /* grid-row: 2 / 2; */
     color: #FFF;
     background-color: #26547C;
-    height: 250px;
-    max-height: 80%;
+    /* height: 250px; */
+    max-height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* max-height: auto; */
+}
+
+.aside-column1 {
+    flex: 25%;
+    max-width: 50%;
+}
+
+.aside-column1 img {
+    width: 100%;
+}
+
+.aside-column2 {
+    flex: 25%;
+    max-width: 25%;
 }
 
 
@@ -44,7 +62,7 @@ img {
     /* height: 100%; */
     /* max-width: 100%; */
     /* height: auto; */
-    max-height: 200px;
+    /* max-height: 200px; */
 }
 
 main {
