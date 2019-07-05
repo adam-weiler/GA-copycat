@@ -1,26 +1,56 @@
 * {
     margin: 0;
     /* padding: 0; */
+    
 }
 
 body {
     height: 1000px;
+    font-size: 26px;
+    font-family: Sans-Serif;
 }
 
 header { /* The Cat shop menu. */
     /* grid-row: 1 / 1; */
+    /* height: 60px; */
     background-color: #06D6A0;
+    padding: 15px;
+}
+
+header h1 {
+    /* display: inline; */
+    color: #FFF;
+    height: 100%;
+    /* vertical-align: middle; */
+    /* line-height: 60px; */
+    font-size: .8em;
+    /* padding: 15px; */
+}
+
+header nav {
+    padding: 15px 25px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: inline;
+}
+
+header nav ul {
+    /* position: absolute; */
+    right: 0;
 }
 
 header nav ul li {
     display: inline;
+    padding: 5px;
+    font-size: .7em;
 }
 
 .container { /* Contains everything. */
     margin: 0 auto;
     /* height: auto; */
     max-width: 900px;
-    width: 90%;
+    width: 100%;
     /* max-height: auto; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
