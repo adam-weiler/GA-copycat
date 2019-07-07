@@ -6,170 +6,138 @@
 body {
     margin: 0;
     padding: 0;
-}
-
-body {
     height: 1000px;
     font-size: 26px;
     font-family: Sans-Serif;
 }
 
-header { /* The Cat shop menu. */
-    /* height: 60px; */
+/* The Cat shop menu. */
+header {
+    height: 60px;
     background-color: #06D6A0;
-    padding: 15px;
+    /* padding: 15px; */
+}
+
+header h3 {
+    padding: 20px 20px;
+    color: #FFF;
+    font-size: .7em;
+}
+
+header nav {
+    padding: 12px 25px;
+    top: 0;
+    right: 0;
+    position: absolute;
 }
 
 li {
     list-style: none;
 }
 
-header h1 {
-    /* display: inline; */
-    color: #FFF;
-    height: 100%;
-    /* vertical-align: middle; */
-    /* line-height: 60px; */
-    font-size: .8em;
-    /* padding: 15px; */
-}
-
-header nav {
-    margin: 0;
-    padding: 15px 25px;
-    top: 0;
-    right: 0;
-    position: absolute;
-    display: inline;
-}
-
-header nav ul {
-    /* position: absolute; */
-    right: 0;
-}
-
 header nav ul li {
-    display: inline;
-    padding: 5px;
+    padding: 0 5.5px;
+    display: inline-block;
     font-size: .7em;
 }
 
-.container { /* Contains everything. */
+/* Contains everything. */
+.container { 
     margin: 0 auto;
-    /* height: auto; */
-    max-width: 900px;
     width: 100%;
-    /* max-height: auto; */
+    max-width: 900px;
     background-color: lightblue;
 }
 
-aside { /* The banner image and h1. */
-    color: #FFF;
+/* The banner image and h1. */
+aside { 
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
     background-color: #26547C;
-    /* height: 250px; */
-    max-height: 100%;
-
-    display: flex;
-    flex-wrap: wrap;
-    /* max-height: auto; */
 }
 
-.aside-column1 {
-    flex: 25%;
-    max-width: 60%;
-}
-
-.aside-column1 img {
+.many-cats-banner {
     width: 100%;
+    min-width: 330px;
 }
-
-.aside-column2 {
-    flex: 25%;
-    max-width: 40%;
-}
-
-.aside-column2 h3 {
-    padding: 32px 20px;
-    font-size: 1.4em;
-    text-align: center;
-}
-
-
-
-
 
 h1 {
-    width: auto;
-    /* text-decoration: underline; */
-    /* text-decoration-color: #EF476F; */
-    display: inline-block;
+    padding: 30px 10px;
+    font-size: 1.45em;
+    text-align: center;
+    color: #FFF;
+        /* text-decoration: underline; */
+        /* text-decoration-color: #EF476F; */
 }
 
 h2 {
-    font-size: .9em;
+    font-size: .85em;
+    padding-bottom: 10px;
 }
 
-.cats-section { /* The section about cats. */
+/* The section about cats. */
+.cats-section { 
+    margin-top: -2px;
+    padding: 53px 20px 40px;
     background-color: #FFD166;
-    padding: 50px 25px;
 }
 
 p {
-    padding: 20px 0 0;
-    font-size: .7em;
+    padding: 10px 0 10px;
+    font-size: .72em;
 }
 
-.products-section { /* The section about products. */
+/* The section about products. */
+.products-section { 
+    padding: 53px 20px 40px;
     background-color: #F2F2F2;
-    padding: 50px 25px;
-    /* display: flex;
-    flex-wrap: wrap; */
-    background-color: cyan;
-}
-
-.products-section p {
-    /* background-color: red; */
-    width: 100%;
-    flex: 100%;
-    max-width: 100%;
 }
 
 .products-section img {
-    /* max-width: 100%; */
-    height: auto;
-    /* display: inline; */
-    border: 3px black solid;
-    /* float: right; */
+    /* margin-top: 10px; */
+    margin-top: 0;
     width: 100%;
+    border: 3px black solid;
 }
 
 .image-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 25px;
+    grid-gap: 32px;
     padding: 10px;
 }
 
 .principles-section { /* The section about principles. */
     background-color: #26547C;
-    padding: 50px 25px;
+    padding: 50px 20px;
     color: #FFF;
 }
 
 .principles-grid {
+    padding-bottom: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.principles-section p {
+    padding: 10px 0 10px;
+}
+
 .principles-grid li {
-    color: #EF476F;
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    font-size: .85em;
+    color: #EF476F;
 }
 
 footer {
+    height: 50px;
     background-color: #06D6A0;
-    padding: 14px 20px;
-    font-size: .7em;
     text-align: right;
+}
+
+footer p {
+    padding: 14px 20px;
+    font-size: .75em;
 }
